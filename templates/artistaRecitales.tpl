@@ -6,7 +6,7 @@
     <li class="list-group-item list-group-item-warning">Lugar: {$recital->lugar} - Fecha: {$recital->fecha}</li>
     {/foreach}
  
-    <a href="./artistas" class="btn btn-outline-success" >Volver a los artistas</a>
+    <a href="artistas" class="btn btn-outline-success" >Volver a los artistas</a>
  
 </ul>
 

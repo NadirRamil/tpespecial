@@ -22,8 +22,13 @@ class ArtistasController {
     function viewartistaRecitales($id){
         $artistaRecitales = $this-> model->getrecitales($id);
         $artista = $this-> model ->getartista($id);
-        $this->view->showartistaRecitales($artistaRecitales, $artista);
-
+        
+        if(!empty($artistaRecitales)){
+            $this->view->showartistaRecitales($artistaRecitales, $artista);
+        }else{
+            $artistas = $this->model->getAllartistas();
+            $this->view->showartistas($artistas, "No se encuentra recitales del artista elegido.");
+        }
     }
     function addartista() {
         $this->authHelper->checkLoggedIn();

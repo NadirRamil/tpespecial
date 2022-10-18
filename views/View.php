@@ -58,7 +58,7 @@ class View{
 
 function showErrorDefault(){
     $this->smarty->assign('error', '404 page not found');
-    $this->smarty->display('templates/error.tpl');
+    $this->smarty->display('templates/errordefault.tpl');
 }
 
 }?>

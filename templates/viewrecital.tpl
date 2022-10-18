@@ -6,7 +6,7 @@
         <p class="card-text">Fecha:{$recital->fecha}</p> 
         <p class="card-text">Lugar:{$recital->lugar}</p> 
 
-        <a href="../tpespecial" class="btn btn-primary">Volver al inicio</a> 
+        <a href="home" class="btn btn-primary">Volver al inicio</a> 
       
     </div>
 </div>

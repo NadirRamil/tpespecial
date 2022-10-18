@@ -33,7 +33,7 @@
 <div>
 {if !isset($smarty.session.USER_ID)} 
   {else}
-  {include file="formAdd.tpl"}
+  {include file="addrecital.tpl"}
 {/if}
 </div>
 {include file="footer.tpl"}
